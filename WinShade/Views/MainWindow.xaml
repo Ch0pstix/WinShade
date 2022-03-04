@@ -4,6 +4,7 @@
                             xmlns:behaviors="clr-namespace:WinShade.Behaviors"
                             xmlns:controls="clr-namespace:WinShade.Controls"
                             xmlns:converters="clr-namespace:WinShade.Converters"
+                            xmlns:base="clr-namespace:WinShade"
                             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
                             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -806,7 +807,7 @@
                                        VerticalAlignment="Center"
                                        FontSize="14"
                                        Foreground="White">
-                                <Run Text="WinShade v2.0, made with " /><Run Foreground="Red"
+                                <Run Text="WinShade v" /><Run Text="{Binding AssemblyVersion, Mode=OneWay}"/><Run Text=", made with "/><Run Foreground="Red"
                                      Text="&#9829;" /><Run Text=" by " /><Hyperlink NavigateUri="https://github.com/Ch0pstix"
                                            RequestNavigate="Hyperlink_RequestNavigate"
                                            ToolTip="My Github :)">

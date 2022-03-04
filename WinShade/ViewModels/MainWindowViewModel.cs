@@ -1,6 +1,7 @@
 ﻿namespace WinShade.ViewModels;
 
 using System;
+using System.Reflection;
 using System.Windows.Threading;
 
 using ReactiveUI;
@@ -13,6 +14,8 @@ public class MainWindowViewModel : ReactiveObject
 	[Reactive] public string ClockHours { get; set; }
 	[Reactive] public string ClockMinutes { get; set; }
 	[Reactive] public string ClockDate { get; set; }
+
+	public Version AssemblyVersion => Assembly.GetExecutingAssembly().GetName().Version;
 
 	public MainWindowViewModel()
 	{
