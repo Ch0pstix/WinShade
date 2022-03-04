@@ -638,7 +638,7 @@
 
                 <Popup x:Name="SettingsPopup"
                        AllowsTransparency="True"
-                       HorizontalOffset="-226"
+                       HorizontalOffset="-276"
                        IsOpen="{Binding ElementName=SettingsToggle, Path=IsChecked}"
                        Placement="Top"
                        PlacementTarget="{Binding ElementName=SettingsToggle}"
@@ -648,7 +648,7 @@
                        UseLayoutRounding="True"
                        VerticalOffset="-20">
 
-                    <Border Width="300"
+                    <Border Width="350"
                             Padding="20"
                             Background="Black"
                             CornerRadius="6">
